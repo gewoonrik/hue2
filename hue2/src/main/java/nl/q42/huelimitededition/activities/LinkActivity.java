@@ -280,11 +280,11 @@ public class LinkActivity extends Activity {
 		// Build list of IPs to search (search from center to outer range, because devices are usually around 192.168.1.100)
 		ArrayList<String> ips = new ArrayList<String>(255);
 		
-		ips.add("192.168.1.127");
+		ips.add("192.168.0.127");
 		
 		for (int i = 1; i <= 127; i++) {
-			ips.add("192.168.1." + (127 - i));
-			ips.add("192.168.1." + (127 + i));
+			ips.add("192.168.0." + (127 - i));
+			ips.add("192.168.0." + (127 + i));
 		}
 		
 		//  Check every IP for a listening device
